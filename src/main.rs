@@ -6,7 +6,7 @@ use zeevonk::trigger::{Trigger, TriggerValue};
 async fn main() {
     pretty_env_logger::init();
 
-    let mut client = Client::new(Identifier::new("zv-example-controller").unwrap());
+    let mut client = Client::new(Identifier::new("zv-ctrl-bmdse").unwrap());
     client.connect("ws://127.0.0.1:7335").await.unwrap();
 
     loop {
