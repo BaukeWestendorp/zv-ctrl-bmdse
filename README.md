@@ -1,6 +1,6 @@
 # BMD Speed Editor Zeevonk Controller
 
-This is a very simple controller (client_id = `zv-ctrl-bmdse`) client for [Zeevonk](https://github.com/BaukeWestendorp/zeevonk) that converts button and wheel events from a BMD Davinci Resolve Speed Editor using my [bmdse crate](https://crates.io/crates/bmdse).
+This is a very simple controller (with client id `zv-ctrl-bmdse`) client for [Zeevonk](https://github.com/BaukeWestendorp/zeevonk) that converts button and wheel events from a BMD Davinci Resolve Speed Editor using my [bmdse](https://crates.io/crates/bmdse) crate.
 
 To install it, clone the repo and use
 
