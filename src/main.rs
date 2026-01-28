@@ -2,7 +2,7 @@ use std::sync::mpsc;
 
 use color_eyre::eyre::Context;
 use log::LevelFilter;
-use zeevonk::client::controller::Client;
+use zeevonk::client::Client;
 use zeevonk::ident::Identifier;
 use zeevonk::trigger::{Trigger, TriggerValue};
 
@@ -32,7 +32,7 @@ async fn main() -> color_eyre::Result<()> {
         });
 
     let mut client = Client::new(Identifier::new("zv-ctrl-bmdse").unwrap());
-    client.connect("ws://127.0.0.1:7335").await.context("failed to connect client to server")?;
+    client.connect("ws://127.0.0.1:7334").await.context("failed to connect client to server")?;
 
     loop {
         match event_rx.recv().expect("channel should be open") {
